@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+:root {
+  --bg-main: #000;
+  --text-main: #fff;
+  --text-b: #000;
+  --accent: #B2FD53;
+  --text: "Gilroy";
+  --grey:#1C1D20;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--text);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 800;
+}
+
+h1 span {
+  color: var(--accent);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--text-b);
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 4px 50px 0px rgba(178, 253, 83, 0.5);
+  -moz-box-shadow: 0px 4px 50px 0px rgba(178, 253, 83, 0.5);
+  box-shadow: 0px 4px 50px 0px rgba(178, 253, 83, 0.5);
+}
+
+.home-offer__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.home-offer__info {
+  max-width: 70%;
+  position: relative;
+  z-index: 2;
+}
+.home-offer__video {
+  position: absolute;
+  width: 440px;
+  right: 0;
+  top: 100px;
+  z-index: 0;
+}
+.home-offer__video video {
+  width: 100%;
+}
+.home-offer__btns {
+  display: flex;
+  align-items: center;
+}
+.home-offer__btns-text {
+  max-width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.home-offer__btn {
+  position: relative;
+  margin-left: 10px;
+}
+.home-offer__btn .btn-accent__decor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-offer__btn .btn-accent__decor img {
+  animation: 12s linear infinite turning;
+  opacity: 0.15;
+}
+
+.header {
+  padding: 20px 0;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  margin-right: auto;
+  margin-left: 30px;
+}
+.header__nav ul {
+  display: flex;
+  gap: 10px;
+}
+.header__nav ul a {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 15px;
+  background-color: var(--grey);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.header__nav ul a:hover {
+  background-color: var(--accent);
+  color: var(--text-b);
+}
+.header__social ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@keyframes turning {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

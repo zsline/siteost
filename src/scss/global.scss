@@ -1,0 +1,32 @@
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--text);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 800;
+}
+
+h1 span {
+    color: var(--accent);
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: var(--text-b);
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    -webkit-box-shadow: 0px 4px 50px 0px rgba(178, 253, 83, 0.5);
+    -moz-box-shadow: 0px 4px 50px 0px rgba(178, 253, 83, 0.5);
+    box-shadow: 0px 4px 50px 0px rgba(178, 253, 83, 0.5)
+}
