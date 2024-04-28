@@ -153,7 +153,29 @@
     }
 
 }
-
+.counts{
+    padding: 80px 0 60px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item{
+        text-align: center;
+        max-width: 186px;
+    }
+    &__number{
+        font-size: 80px;
+        font-weight: 900;
+        color: var(--accent);
+    }
+    &__num{
+        display: inline-block;
+        margin-right: -20px;
+    }
+    &__text{
+        font-size: 20px;
+    }
+}
 
 @keyframes turning {
     from {
