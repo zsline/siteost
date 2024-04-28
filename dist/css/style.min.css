@@ -212,8 +212,7 @@ h2 {
 }
 
 .btn-accent:hover .btn-accent__decor img {
-  animation: none;
-  opacity: 0.45;
+  opacity: 0.5;
 }
 
 .why {
