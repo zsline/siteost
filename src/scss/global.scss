@@ -2,6 +2,7 @@ body {
     background-color: var(--bg-main);
     color: var(--text-main);
     font-family: var(--text);
+    font-size: 16px;
 }
 
 .container {
@@ -11,22 +12,33 @@ body {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: clamp(2.81rem, calc(1.53rem + 6.4vw), 6.25rem);
     font-weight: 800;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 h1 span {
     color: var(--accent);
 }
-
+h2{
+    font-size: clamp(1.88rem, calc(1.18rem + 3vw), 3.75rem);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.header__mobil{
+    display: none;
+}
 .btn-accent {
+    display: inline-block;
     background-color: var(--accent);
     color: var(--text-b);
     padding: 15px 30px;
     border-radius: 30px;
-    font-size: 24px;
+    font-size: clamp(1.25rem, calc(1.16rem + 0.47vw), 1.5rem);
     font-weight: 600;
     -webkit-box-shadow: 0px 4px 50px 0px rgba(178, 253, 83, 0.5);
     -moz-box-shadow: 0px 4px 50px 0px rgba(178, 253, 83, 0.5);
-    box-shadow: 0px 4px 50px 0px rgba(178, 253, 83, 0.5)
+    box-shadow: 0px 4px 50px 0px rgba(178, 253, 83, 0.5);
+    cursor: pointer;
 }
