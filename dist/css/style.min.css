@@ -89,8 +89,6 @@ body {
 h1 {
   font-size: clamp(2.81rem, 1.53rem + 6.4vw, 6.25rem);
   font-weight: 800;
-  margin-top: 80px;
-  margin-bottom: 60px;
 }
 
 h1 span {
@@ -173,6 +171,11 @@ h2 {
   position: relative;
   z-index: 2;
 }
+.home-offer__info h1 {
+  line-height: 100%;
+  margin-top: 63px;
+  margin-bottom: 65px;
+}
 .home-offer__video {
   position: absolute;
   width: clamp(7.5rem, -0.64rem + 40.7vw, 29.38rem);
@@ -213,6 +216,9 @@ h2 {
   opacity: 0.45;
 }
 
+.why {
+  margin-top: 71px;
+}
 .why__wrapper {
   background-color: var(--bg-light);
   color: var(--text-b);
@@ -275,7 +281,7 @@ h2 {
 }
 
 .counts {
-  padding: 80px 0 60px;
+  padding: 46px 0 60px;
 }
 .counts__wrapper {
   display: flex;
