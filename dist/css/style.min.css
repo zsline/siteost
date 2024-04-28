@@ -353,6 +353,14 @@ h2 {
     flex-direction: column;
     align-items: start;
   }
+  .counts__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .counts__item {
+    max-width: 100%;
+  }
 }
 @media (max-width: 670px) {
   .home-offer__info {
