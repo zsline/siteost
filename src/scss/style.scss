@@ -80,9 +80,14 @@
             img{
                 animation: 12s linear infinite  turning;
                 opacity: 0.15;
+                transition: all 0.7s;
             }
         }
     }
+}
+.btn-accent:hover .btn-accent__decor img{
+    animation: none;
+    opacity: 0.45;
 }
 .why{
     &__wrapper{
