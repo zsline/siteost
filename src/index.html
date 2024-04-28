@@ -120,6 +120,58 @@
                 </div>
             </div>
         </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__wrapper">
+                    <div class="feedback__info">
+                        <h3>Залиште заявку та отримайте <span>гарантований</span> подарунок</h3>
+                        <p>Подарунок на вибір:</p>
+                        <ul class="feedback__presents">
+                            <li class="feedback__presents--item">
+                                <img src="img/icon_logotype.svg" alt="">
+                                Розробка логотипу
+                            </li>
+                            <li class="feedback__presents--item">
+                                <img src="img/icon_host.svg" alt="">
+                                3 місяці хостингу
+                            </li>
+                            <li class="feedback__presents--item">
+                                <img src="img/icon_support.svg" alt="">
+                                Тех. підтримка 1 місяць
+                            </li>
+                        </ul>
+                        <div class="feedback__img--one">
+                            <img src="img/bg_form_1.png" alt="">
+                        </div>
+                        <div class="feedback__img--two">
+                            <img src="img/bg_form_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="feedback__form">
+                        <h4>Зробимо розрахунок Вашого сайту</h4>
+                        <form action="#">
+                            <label for="feedback-name">Ваше ім'я</label><br>
+                            <input id="feedback-name" type="text" name="name" placeholder="Вкажіть ім'я"/><br>
+                            <label for="feedback-phone">Номер телефону</label><br>
+                            <input id="feedback-phone" type="text" name="phone" placeholder="Введіть номер телефону"/><br>
+                            <label for="feedback-desc">Сфера діяльності</label><br>
+                            <input id="feedback-desc" type="text" name="description" placeholder="Чим ви займаєтесь?"/><br>
+                            <p>Зручний метод зв'язку</p>
+                            <p class="feedback__form--social">
+                            <label class="feedback-telegram" for="feedback-telegram"><img src="img/icon-telegram.svg" alt="">Telegram</label>
+                            <input id="feedback-telegram" value="telegram" type="radio" name="social"/>
+                            <label class="feedback-whatsapp" for="feedback-whatsapp"><img src="img/icon-whatsupp.svg" alt="">WhatsApp</label>
+                            <input id="feedback-whatsapp" value="whatsapp" type="radio" name="social"/>
+                            <label class="feedback-viber" for="feedback-viber"><img src="img/icon-viber.svg" alt="">Viber</label>
+                            <input id="feedback-viber" value="viber" type="radio" name="social"/>
+                            </p>
+                            <input type="submit" value="Розрахувати вартість" />
+                            <p>Натискаючи на кнопку я даю згоду на обробку персональних даних</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>

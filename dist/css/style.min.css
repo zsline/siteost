@@ -101,6 +101,21 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: clamp(1.56rem, 1.33rem + 1.16vw, 2.19rem);
+  text-transform: uppercase;
+}
+
+h3 span {
+  color: var(--accent);
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .header__mobil {
   display: none;
 }
@@ -303,12 +318,147 @@ h2 {
   font-size: 20px;
 }
 
+.feedback__wrapper {
+  display: flex;
+  gap: 20px;
+}
+.feedback__info {
+  position: relative;
+  width: 60%;
+  background-color: var(--grey);
+  padding: 20px 20px 270px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.feedback__img--one {
+  position: absolute;
+  bottom: -308px;
+  left: -2px;
+}
+.feedback__img--two {
+  position: absolute;
+  bottom: -352px;
+  right: -53px;
+}
+.feedback__presents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+  max-width: 380px;
+}
+.feedback__presents--item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 10px;
+  background-color: var(--accent);
+  color: var(--text-b);
+  font-weight: 500;
+  border-radius: 5px;
+}
+.feedback__form {
+  background-color: var(--bg-light);
+  border-radius: 20px;
+  padding: 15px 30px;
+  color: var(--text-b);
+  width: 30%;
+  flex: 1 0;
+}
+.feedback__form h4 {
+  text-align: center;
+}
+.feedback__form form {
+  margin-top: 30px;
+}
+.feedback__form form label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.feedback__form form input[type=text] {
+  margin-bottom: 16px;
+  width: 100%;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 10px;
+  line-height: 28px;
+}
+.feedback__form form input[type=text]::placeholder {
+  color: #CBCBCB;
+}
+.feedback__form form input[type=submit] {
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--accent);
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 15px 0 10px;
+}
+.feedback__form form input[type=submit]:hover {
+  background-color: var(--accent-hover);
+}
+.feedback__form form input[type=radio] {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}
+.feedback__form form p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.feedback__form form p:nth-last-child(1) {
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+}
+.feedback__form--social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  width: 100%;
+}
+.feedback__form--social label {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+}
+
+.feedback-telegram {
+  background-color: rgba(43, 162, 219, 0.1);
+  color: #2BA2DB;
+}
+
+.feedback-whatsapp {
+  background-color: rgba(81, 200, 93, 0.1);
+  color: #51C85D;
+}
+
+.feedback-viber {
+  background-color: rgba(102, 92, 167, 0.1);
+  color: #665CA7;
+}
+
 @keyframes turning {
   from {
     transform: rotate(0);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 1075px) {
+  .feedback__form--social {
+    flex-direction: column;
   }
 }
 @media (max-width: 992px) {
@@ -366,6 +516,20 @@ h2 {
   .counts__item {
     max-width: 100%;
   }
+  .feedback__wrapper {
+    flex-direction: column;
+  }
+  .feedback__info {
+    width: 100%;
+  }
+  .feedback__form {
+    width: 100%;
+  }
+  .feedback__form--social {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 @media (max-width: 670px) {
   .home-offer__info {
@@ -381,6 +545,26 @@ h2 {
     width: 100%;
     object-fit: contain;
   }
+  .feedback__form--social {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .feedback__img--one {
+    bottom: -249px;
+    left: -31px;
+    transform: scale(0.7);
+  }
+  .feedback__img--two {
+    bottom: -304px;
+    right: -150px;
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 470px) {
+  .feedback__form--social {
+    flex-direction: column;
+  }
 }
 @media (max-width: 424px) {
   .why h2 {
@@ -391,5 +575,10 @@ h2 {
     width: 186px;
     height: 590px;
     right: 0;
+  }
+  .feedback__img--one {
+    bottom: -249px;
+    left: -78px;
+    transform: scale(0.7);
   }
 }
